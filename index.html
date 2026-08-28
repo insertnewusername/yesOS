@@ -7,17 +7,25 @@
   <body>
     <h1>Welcome to YesOS</h1>
     <a href="https://github.com/insertnewusername">Github</a>
-    <div class="intro">
-        <h1>YesOS</h1>
-        <p>YesOS is THE os you should use. Really? YES</p>
+    <div id="welcome">
+        <div id="welcomeheader">
+            <h1>YesOS</h1>
+            <p>YesOS is THE os you should use. Really? YES</p>
+        </div>
     </div>
 
     <div class="topbar">
         <p>YesOS</p>
-        <p>6/21/2023 3:41pm</p>
+        <p id="timeElement">Time</p>
     </div>
 
+    <script>
+        setInterval(function () {
+        document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
+        }, 1000);
+    </script>
 
+    <script src="script.js"></script>
     
   </body>
 

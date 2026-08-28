@@ -4,9 +4,11 @@ body {
     background-repeat: no-repeat;
 }
 
-.intro {
-    text-align: center;
+#welcome {
     position: absolute;
+    text-align: center;
+    cursor: move;
+    z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

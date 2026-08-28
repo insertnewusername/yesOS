@@ -1,5 +1,5 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("welcome"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
