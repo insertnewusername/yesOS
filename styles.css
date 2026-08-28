@@ -1,5 +1,7 @@
 body {
-    background-image: url(background.png)
+    background-image: url(background.png);
+    background-size: fill;
+    background-repeat: no-repeat;
 }
 
 .intro {
@@ -12,4 +14,18 @@ body {
     width: 128px;
     border-radius: 16px;
     padding: 20px
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    background-color: rgba(167, 202, 223, 0.325);
+    width: 100%;
+}
+
+.topbar p {
+    background-color: rgba(146, 174, 221, 0.544); 
+    padding: 6px 15px; 
+    border-radius: 16px;
 }
