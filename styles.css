@@ -6,6 +6,8 @@ body {
 
 #welcome {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     cursor: move;
     z-index: 100;
@@ -13,11 +15,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border: solid;
-    width: 128px;
+    width: 60%;
+    height: 60%;
     border-radius: 16px;
     padding: 20px
 }
 
+#welcomeheader {
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color:rgb(101, 153, 226);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+
+}
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -30,4 +43,11 @@ body {
     background-color: rgba(146, 174, 221, 0.544); 
     padding: 6px 15px; 
     border-radius: 16px;
+}
+
+#welcomeclose {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color:red;
 }
