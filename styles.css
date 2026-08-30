@@ -22,7 +22,7 @@ body {
     padding: 20px;
 }
 
-#welcomeheader, #notesheader, {
+#welcomeheader, #notesheader {
     display: flex;
     cursor:move;
     backdrop-filter: blur(10px);
@@ -57,12 +57,12 @@ body {
 
 .desktopApps {
     display:flex;
+    position:absolute;
     justify-content:space-evenly;
-    width: 100%;
+    width: 99%;
     backdrop-filter: blur(10px);
     background-color:rgba(102, 189, 232, 0.826);
-    transform:translateY(1100%);
-
+    transform: translateY(calc(87vh - 60px));
 }
 
 .desktopApps img {
