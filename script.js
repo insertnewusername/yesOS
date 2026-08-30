@@ -67,8 +67,14 @@ function closeWindow(element) {
   element.style.display = "none"
 }
 
+var topBar = document.querySelector("#top")
+
 function openWindow(element) {
   element.style.display = "block"
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
 }
 
 
@@ -117,4 +123,11 @@ function addWindowTapHandling(element) {
   element.addEventListener("mousedown", () =>
     handleWindowTap(element)
   )
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
 }
