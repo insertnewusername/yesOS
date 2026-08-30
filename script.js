@@ -211,3 +211,22 @@ for (let i = 0; i < content.length; i++) {
 }
 
 setNotesContent(0)
+
+const backgrounds = [
+    "background.png",
+    "background1.png",
+    "background2.png",
+    "background3.png"
+];
+
+let currentIndex = 0;
+
+document.getElementById("changeBg").addEventListener("click", () => {
+    currentIndex++;
+
+    if (currentIndex >= backgrounds.length) {
+        currentIndex = 0;
+    }
+
+    document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+});
