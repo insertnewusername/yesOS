@@ -64,3 +64,15 @@ body {
     transform:translateY(1100%);
 
 }
+
+.desktopApps img {
+    width:64px;
+    height: 64px;
+    border-radius:16px;
+    padding-top:4px;
+}
+
+.selected {
+    transition: transform 0.3s;
+    transform: translateY(-10px);
+}
