@@ -69,10 +69,10 @@ function closeWindow(element) {
 
 var topBar = document.querySelector("#top")
 
+
 function openWindow(element) {
   element.style.display = "block"
   biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
   element.style.zIndex = biggestIndex;
   topBar.style.zIndex = biggestIndex + 1;
 }
@@ -89,6 +89,8 @@ welcomeScreenOpen.addEventListener("click", function() {
 var selectedIcon = undefined
 
 var notesScreen = document.querySelector("#notes")
+
+var biggestIndex = 1;
 
 var notesScreenClose = document.querySelector("#notesclose")
 
