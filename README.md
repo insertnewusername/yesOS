@@ -4,6 +4,7 @@ YesOS is a functional operating system that runs on the web. It has one app, tha
 It was built using html, css, and javascript, being a fairly simple web project. 
 More updates for the overall looks, css, and apps will be coming soon! (I promise)
 This is a fairly short project that's very self explanatory, so this readme is kinda short
+New feature apart from tutorial: Have a background changer button, click on it to change the background! Loops between 4 images
 
 Screenshots:
 
