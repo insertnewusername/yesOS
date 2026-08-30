@@ -131,3 +131,86 @@ function handleWindowTap(element) {
   topBar.style.zIndex = biggestIndex + 1;
   deselectIcon(selectedIcon)
 }
+
+
+/* Notes content */
+
+var content = [
+  {
+    title: "Welcome",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+            </br>
+            </br>
+            <img src=""
+              style="width: 96px; border-radius: 16px" />
+            </br>
+            </br>
+
+            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
+            through
+            these notes? As I <del>once said</del> <ins>always say</ins>
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Time Will Tell
+            </br>
+            ~ Thomas
+          </i>
+        </blockquote>
+        <span contenteditable="true">
+          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
+          Maybe
+          even some thoughts regarding nature & tea? Go and find out!
+        </span>
+        </p>
+      `
+  },
+    {
+    title: "Sample Text",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          Here's some sample text
+        </p>
+      `
+  }
+]
+
+
+
+function addToSideBar(index) {
+  var sidebar = document.querySelector("#sidebar");
+  var note = content[index];
+
+  var newDiv = document.createElement("div");
+
+  newDiv.innerHTML = `
+    <p style="margin: 0px;">${note.title}</p>
+    <p style="font-size: 12px; margin: 0px;">${note.date}</p>
+  `;
+
+  newDiv.addEventListener("click", function() {
+    setNotesContent(index);
+  });
+
+  sidebar.appendChild(newDiv);
+}
+
+
+
+function setNotesContent(index) {
+
+  var notesContent = document.querySelector("#notesContent")
+
+  notesContent.innerHTML = content[index].content
+}
+
+for (let i = 0; i < content.length; i++) {
+  addToSideBar(i);
+}
+
+setNotesContent(0)
