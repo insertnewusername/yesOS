@@ -1,5 +1,6 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
+dragElement(document.querySelector("#notes"))
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -70,6 +71,7 @@ function openWindow(element) {
   element.style.display = "block"
 }
 
+
 welcomeScreenClose.addEventListener("click", function() {
   closeWindow(welcomeScreen);
 });
@@ -108,4 +110,11 @@ function handleIconTap(element) {
   } else {
     selectIcon(element)
   }
+}
+
+
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
 }
