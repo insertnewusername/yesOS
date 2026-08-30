@@ -84,7 +84,12 @@ var notesScreen = document.querySelector("#notes")
 
 var notesScreenClose = document.querySelector("#notesclose")
 
+var notesScreenOpen = document.querySelector("#notesopen")
+
 notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
+
+notesScreenOpen.addEventListener("click", () => openWindow(notesScreen));
+
 
 function selectIcon(element) {
   element.classList.add("selected");

@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#welcome {
+#welcome, #notes {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
     padding: 20px;
 }
 
-#welcomeheader {
+#welcomeheader, #notesheader, {
     display: flex;
     cursor:move;
     backdrop-filter: blur(10px);
@@ -48,7 +48,7 @@ body {
     border-radius: 16px;
 }
 
-#welcomeclose {
+#welcomeclose, #notesclose {
     width: 16px;
     height: 16px;
     border-radius: 16px;
