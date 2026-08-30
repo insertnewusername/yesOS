@@ -141,40 +141,35 @@ var content = [
     date: "06/28/2023",
     content: `
               <p contenteditable="True">
-          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+          <span contenteditable="true">Welcome to <strong>Notepad</strong>
             </br>
             </br>
-            <img src=""
-              style="width: 96px; border-radius: 16px" />
-            </br>
-            </br>
-
-            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
-            through
-            these notes? As I <del>once said</del> <ins>always say</ins>
-          </span>
-        <blockquote
-          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
-          contenteditable="true">
-          <i>Time Will Tell
-            </br>
-            ~ Thomas
-          </i>
-        </blockquote>
-        <span contenteditable="true">
-          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
-          Maybe
-          even some thoughts regarding nature & tea? Go and find out!
+            Here is the place where you can jolt down your thoughts, write whatever you wish, or draft something
+            <br>
+            I like to use this to document all my achievements, but what you do with this is totally up to you
+            <br>
+            Have fun!
         </span>
         </p>
       `
   },
     {
-    title: "Sample Text",
+    title: "My Favourite Repos",
     date: "06/28/2023",
     content: `
               <p contenteditable="True">
-          Here's some sample text
+          Here's some of the github repos I'm most proud of and am finished with<br>
+          Classroom24k - https://github.com/insertnewusername/Classroom24k<br>
+          Magnetic - https://github.com/insertnewusername/magnetic<br>
+          Macromacropad - https://github.com/insertnewusername/my-first-macropad<br>
+          And much more!
+          <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Follow me on github!
+          <br>
+          https://github.com/insertnewusername/
+        </blockquote>
         </p>
       `
   }
